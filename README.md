@@ -24,18 +24,22 @@ An intelligent recipe generation system using Google AI Studio and Spoonacular A
 
 ### Installation
 1. Clone the repository:
-
+```bash
 git clone https://github.com/yourusername/recipe-generator.git
 cd recipe-generator
+```
 
 2.Install dependencies:
-
+```bash
 pip install -r requirements.txt
+```
 
 3.Create a .env file:
+```bash
 
 echo "GOOGLE_API_KEY=your_key_here" > .env
 echo "SPOONACULAR_API_KEY=your_key_here" >> .env
+```
 
 Usage
 Run the recipe generator:
