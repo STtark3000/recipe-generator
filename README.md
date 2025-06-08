@@ -29,12 +29,12 @@ git clone https://github.com/yourusername/recipe-generator.git
 cd recipe-generator
 ```
 
-2.Install dependencies:
+2. Install dependencies:
 ```bash
 pip install -r requirements.txt
 ```
 
-3.Create a .env file:
+3. Create a .env file:
 ```bash
 
 echo "GOOGLE_API_KEY=your_key_here" > .env
@@ -43,8 +43,9 @@ echo "SPOONACULAR_API_KEY=your_key_here" >> .env
 
 Usage
 Run the recipe generator:
-
+```bash
 python main.py
+```
 
 
 Example output:
@@ -66,3 +67,17 @@ Example output:
 
 ⏱️ Cooking Time: 25 minutes
 📊 Nutrition (per serving): 450 kcal, 35g protein
+
+
+Project Structure:
+recipe-generator/
+├── .env.example          # Environment template
+├── main.py               # Main script
+├── requirements.txt      # Dependencies
+├── recipe_generator/     # Core modules
+│   ├── __init__.py
+│   ├── generator.py      # AI recipe generation
+│   ├── nutrition_api.py  # Nutrition data
+│   └── utils.py         # Helper functions
+├── samples/              # Example recipes
+└── docs/                 # Documentation
